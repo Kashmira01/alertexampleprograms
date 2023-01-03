@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myPrompt()">TRY IT</button>
+    <div id="demo"></div>
+    <script>
+        function myPrompt(){
+            var person=prompt("Enter the name");
+            if(person==null||person==""){
+                text="User cancelled the prompt"
+            }
+            else{
+                text="Hello"+" "+ person +" "+ "How are you today";
+            }
+            document.getElementById('demo').innerHTML=text;
+        }
+    </script>
+</body>
+</html>
